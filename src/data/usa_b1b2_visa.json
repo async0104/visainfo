@@ -1,0 +1,178 @@
+{
+  "country": "美国",
+  "visa_type": "访客签证（旅游/商务）",
+  "visa_code": "B-1/B-2",
+  "source_url": "https://travel.state.gov/content/travel/en/us-visas/tourism-visit/visitor.html",
+  "last_updated": "2025-01-01",
+  "data_fetched": "2026-04-27",
+  "applicant_region": "中国大陆",
+  "application_channel": "通过美国驻华大使馆/领事馆预约面签，或通过 ustraveldocs.com 预约",
+
+  "visa_subtypes": [
+    {
+      "id": "B1",
+      "name": "B-1 商务签证",
+      "purpose": [
+        "与商业伙伴洽谈",
+        "参加科学、教育、专业或商业会议/研讨会",
+        "处理遗产事务",
+        "谈判合同"
+      ]
+    },
+    {
+      "id": "B2",
+      "name": "B-2 旅游签证",
+      "purpose": [
+        "旅游、度假",
+        "探亲访友",
+        "就医",
+        "参加社会团体活动",
+        "业余参加音乐、体育等比赛（不收取报酬）",
+        "参加短期休闲课程（不计学分，如度假期间的烹饪课）"
+      ]
+    },
+    {
+      "id": "B1B2",
+      "name": "B-1/B-2 商务+旅游联合签证",
+      "purpose": ["同时涵盖商务和旅游目的"]
+    }
+  ],
+
+  "not_permitted": [
+    "就读正式学位课程（需F/M签证）",
+    "在美工作、受雇（需工作签证）",
+    "有偿演出或在付费观众面前的专业表演",
+    "以船员/机组人员身份入境",
+    "从事外国媒体工作（广播、电影、平面媒体等，需I签证）",
+    "永久定居",
+    "赴美生育（以获取美国国籍为主要目的）"
+  ],
+
+  "application_steps": [
+    {
+      "step": 1,
+      "title": "填写在线签证申请表",
+      "detail": "完成 DS-160 非移民签证在线申请表，并打印确认页带至面签"
+    },
+    {
+      "step": 2,
+      "title": "上传照片",
+      "detail": "在填写 DS-160 时上传符合要求的照片；若上传失败，需携带一张符合规格的纸质照片"
+    },
+    {
+      "step": 3,
+      "title": "缴纳签证申请费",
+      "detail": "缴纳不可退还的签证申请费（MRV费），金额为185美元；部分国籍还需在签证批准后缴纳签证签发费"
+    },
+    {
+      "step": 4,
+      "title": "预约面签",
+      "detail": "在居住地所在国的美国大使馆或领事馆预约面签；等待时间因地点、季节和签证类别而异，建议尽早申请"
+    },
+    {
+      "step": 5,
+      "title": "准备材料并参加面签",
+      "detail": "携带所有必要材料参加面签，领事官员将进行面谈并采集无墨数字指纹"
+    }
+  ],
+
+  "required_docs": [
+    {
+      "item": "有效护照",
+      "required": true,
+      "note": "护照有效期须超过在美停留期至少6个月（部分国家协议豁免）；护照内每位需要签证的人员须单独申请"
+    },
+    {
+      "item": "DS-160 非移民签证申请表确认页",
+      "required": true
+    },
+    {
+      "item": "签证申请费缴费收据",
+      "required": true,
+      "note": "如要求在面签前缴费"
+    },
+    {
+      "item": "照片",
+      "required": true,
+      "note": "通常在填写 DS-160 时在线上传；若上传失败，需携带一张符合规格的纸质照片"
+    }
+  ],
+
+  "additional_docs_may_required": [
+    {
+      "category": "行程目的证明",
+      "examples": ["机票预订记录", "酒店预订记录", "旅行计划"]
+    },
+    {
+      "category": "离境意图证明（证明不会滞留美国）",
+      "examples": [
+        "在职证明（含职位、在职时间、年收入）",
+        "家庭关系证明（配偶、子女等）",
+        "房产证明",
+        "其他与本国的强联系证明"
+      ]
+    },
+    {
+      "category": "经济能力证明",
+      "examples": [
+        "银行流水（近6个月）",
+        "资产证明",
+        "若由他人资助，需提供资助人的经济证明"
+      ]
+    }
+  ],
+
+  "notes": [
+    "邀请信或经济担保书（Affidavit of Support）不是必须材料，提交与否不影响签证审批",
+    "签证资格主要基于申请人与本国的联系，而非美国亲友的保证",
+    "面签后可能需要行政审查（Administrative Processing），领事官员会告知",
+    "签证批准后，部分国籍需额外缴纳签证签发费",
+    "B-1/B-2 签证通常为10年多次往返，每次入境停留时间由入境口岸移民官决定（通常最长6个月）"
+  ],
+
+  "fee_summary": {
+    "application_fee": {
+      "amount": 185,
+      "currency": "USD",
+      "refundable": false,
+      "note": "MRV费，无论签证是否批准均不退还"
+    },
+    "issuance_fee": {
+      "note": "签发费因申请人国籍而异，签证批准后按实际情况缴纳"
+    }
+  },
+
+  "validity_typical": {
+    "duration": "10年",
+    "entries": "多次往返",
+    "max_stay_per_entry": "通常6个月（由入境口岸移民官决定）",
+    "note": "实际有效期和停留时间由领事官员决定，中国公民通常获批10年多次"
+  },
+
+  "interview_locations_china": [
+    { "city": "北京", "address": "美国驻华大使馆" },
+    { "city": "上海", "address": "美国驻上海总领事馆" },
+    { "city": "广州", "address": "美国驻广州总领事馆" },
+    { "city": "成都", "address": "美国驻成都总领事馆" },
+    { "city": "沈阳", "address": "美国驻沈阳总领事馆" }
+  ],
+
+  "official_links": [
+    {
+      "name": "美国国务院访客签证官方页面",
+      "url": "https://travel.state.gov/content/travel/en/us-visas/tourism-visit/visitor.html"
+    },
+    {
+      "name": "DS-160 在线申请表",
+      "url": "https://ceac.state.gov/genniv/"
+    },
+    {
+      "name": "美国驻华大使馆签证预约（中国申请人）",
+      "url": "https://www.ustraveldocs.com/cn_zh/"
+    },
+    {
+      "name": "照片规格要求",
+      "url": "https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/photos.html"
+    }
+  ]
+}

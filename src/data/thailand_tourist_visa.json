@@ -1,0 +1,127 @@
+{
+  "country": "泰国",
+  "visa_type": "旅游签证",
+  "source_url": "https://thaiembbeij.org/cn/purpose_of_visit_rev/tourism-leisure-activities/",
+  "source_page": "https://thaiembbeij.org/cn/visa/",
+  "last_updated": "2023-08-07",
+  "data_fetched": "2026-04-26",
+  "applicant_region": "中国大陆",
+
+  "important_notice": {
+    "visa_free_policy": "自2023年9月25日起，中国公民持普通护照可免签入境泰国，单次停留不超过60天，每180天累计不超过90天。旅游签证（TR）主要适用于需要停留超过60天或需要多次往返的情况。",
+    "application_method": "全部通过电子签证系统在线申请：www.thaievisa.go.th",
+    "processing_time": "约3-5个工作日（北京领区约11个工作日，上海领区约9个工作日）",
+    "submission": "在线提交材料，无需亲赴使馆，签证以电子方式发放，打印后出入境使用"
+  },
+
+  "visa_subtypes": [
+    {
+      "id": "TR_single",
+      "name": "单次旅游签证（TR Single Entry）",
+      "validity": "3个月",
+      "stay_limit": "每次60天（可在移民局申请延期一次，最多30天，费用1900泰铢）",
+      "entries": "单次",
+      "fee": {
+        "amount": 240,
+        "currency": "CNY",
+        "note": "四川或重庆户籍申请人同为240元；2024年7月15日起调整为240元"
+      },
+      "required_docs": [
+        {
+          "seq": 1,
+          "item": "护照或旅行证件首页",
+          "required": true,
+          "note": "护照有效期须在6个月以上"
+        },
+        {
+          "seq": 2,
+          "item": "近6个月内拍摄的白底彩色免冠证件照",
+          "required": true,
+          "note": "若证件照片与当前面貌不符将拒绝签证申请"
+        },
+        {
+          "seq": 3,
+          "item": "已支付出票并与航空公司确认的去程+返程（或去往第三国）电子机票",
+          "required": true,
+          "note": "机票须已确认，未确认有权拒绝申请；返程机票建议大于30天"
+        },
+        {
+          "seq": 4,
+          "item": "在泰期间住宿证明",
+          "required": true,
+          "options": [
+            "酒店确认单及缴费凭证（需注有申请人入住信息）",
+            "在泰亲属/朋友出具的带签名邀请信（需注明具体地址，附邀请人身份证/户口本/护照及房产证）"
+          ],
+          "note": "酒店须已确认，未确认有权拒绝申请"
+        },
+        {
+          "seq": 5,
+          "item": "财务证明",
+          "required": true,
+          "note": "近3个月银行流水，余额须超过5,000元人民币/人；18岁以下未成年人可由父母代为出具，按人数计算（每人5,000元）"
+        },
+        {
+          "seq": 6,
+          "item": "12个月（1年）出入境记录",
+          "required": true,
+          "note": "中国公民通过国家移民管理局查询：https://s.nia.gov.cn/mps/login.html?type=getCallBackToken&flag=false；请在缴费日起算10日内查询；外籍人士需提供有效居留许可及中国境内担保方或院校出具的英文担保信"
+        }
+      ]
+    },
+    {
+      "id": "TR_multiple",
+      "name": "多次旅游签证（TR Multiple Entry / METV）",
+      "validity": "6个月",
+      "stay_limit": "每次60天（可在移民局申请延期一次，最多30天）",
+      "entries": "多次",
+      "fee": {
+        "amount": 1200,
+        "currency": "CNY",
+        "note": "有效期6个月多次入境"
+      },
+      "required_docs_note": "与单次旅游签证材料相同，具体以使馆官网为准",
+      "required_docs": [
+        { "seq": 1, "item": "护照或旅行证件首页", "required": true, "note": "有效期6个月以上" },
+        { "seq": 2, "item": "近6个月内拍摄的白底彩色免冠证件照", "required": true },
+        { "seq": 3, "item": "已确认的去程+返程电子机票", "required": true },
+        { "seq": 4, "item": "在泰期间住宿证明（酒店确认单或邀请信）", "required": true },
+        { "seq": 5, "item": "财务证明（近3个月银行流水，余额超过15,000元人民币/人）", "required": true, "note": "多次签证财务要求更高" },
+        { "seq": 6, "item": "12个月出入境记录", "required": true }
+      ]
+    }
+  ],
+
+  "important_notes": [
+    "申请材料不实或提供虚假材料可能导致永久性拒签或拒绝入境泰国",
+    "签证官有权要求补加材料信息，如有必要有权要求申请人进行面试",
+    "签证官有权取消或拒绝签证申请，签证费一经支付概不退还",
+    "所有前往泰国的旅客必须遵守中国有关部门和中国民航局（CAAC）的指南及规定",
+    "签证批准后，使馆会向申请人发送电子签证证明信，申请人需打印后出入境使用"
+  ],
+
+  "fee_summary": {
+    "single": { "amount": 240, "currency": "CNY" },
+    "multiple_6month": { "amount": 1200, "currency": "CNY" },
+    "on_arrival": { "amount": 2000, "currency": "THB", "note": "落地签，约合人民币400元，需现金支付泰铢" }
+  },
+
+  "embassy_info": {
+    "name": "泰王国驻华大使馆（北京）",
+    "address": "北京市朝阳区光华路21号，邮编100600",
+    "consular_phone_cn": "(86-10) 8531-8769",
+    "consular_phone_thai": "(86-10) 8531-8767",
+    "visa_inquiry_phone": "(86-10) 8531-8768（周一至周五 15:00-16:00）",
+    "email": "visa.pek@mfa.go.th",
+    "working_hours": "周一至周五 09:00-12:00, 13:00-17:00",
+    "evisa_website": "https://www.thaievisa.go.th"
+  },
+
+  "visa_free_alternative": {
+    "eligible": "中国大陆普通护照持有人",
+    "stay_limit": "单次不超过60天",
+    "cumulative_limit": "每180天累计不超过90天",
+    "effective_date": "2023-09-25",
+    "note": "免签入境不可在泰国境内转换为其他签证类型；若需停留超过60天或多次往返，仍需申请旅游签证"
+  }
+}

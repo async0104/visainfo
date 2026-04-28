@@ -1,0 +1,182 @@
+{
+  "country": "日本",
+  "visa_type": "旅游签证",
+  "source_url": "https://www.cn.emb-japan.go.jp/files/100693914.docx",
+  "source_page": "https://www.cn.emb-japan.go.jp/itpr_zh/visa_kanko.html",
+  "last_updated": "2025-03-24",
+  "data_fetched": "2026-04-26",
+  "applicant_region": "中国大陆",
+  "application_channel": "必须通过指定旅行社申请，不接受个人直接申请",
+  "processing_time": "从使馆受理翌日起第5个工作日",
+
+  "visa_subtypes": [
+    {
+      "id": "group_tour",
+      "name": "团队旅游签证",
+      "validity": "单次",
+      "stay_limit": "15天以内",
+      "group_size": "5人以上40人左右以下",
+      "fee_rmb": 145,
+      "fee_note": "访问冲绳县或东北三县（岩手、福岛、宫城）免签证费",
+      "required_docs": [
+        { "item": "护照", "required": true },
+        { "item": "签证申请表（需粘贴本人照片）", "required": true },
+        { "item": "个人信息处理同意书", "required": true },
+        { "item": "户口本或亲属关系公证书", "required": false, "note": "携同本馆辖区外亲属旅行时需提交" },
+        { "item": "其他相关资料（要求追加的资料等）", "required": false }
+      ]
+    },
+    {
+      "id": "individual_single",
+      "name": "个人单次旅游签证",
+      "validity": "3个月",
+      "stay_limit": "15天或30天（由使馆决定）",
+      "fee_rmb": 145,
+      "fee_note": "访问冲绳县或东北三县（岩手、福岛、宫城）免签证费",
+      "subtypes": [
+        {
+          "name": "一般情况",
+          "required_docs": [
+            { "item": "护照", "required": true },
+            { "item": "签证申请表（需粘贴本人照片）", "required": true },
+            { "item": "个人信息处理同意书", "required": true },
+            { "item": "能确认本人居住地的资料", "required": true },
+            {
+              "item": "能确认经济能力的资料",
+              "required": true,
+              "options": [
+                "a. 国际信用卡（含银联卡）金卡级别以上 + 能确认该卡有效的资料",
+                "b. 在职证明（含职位、在职期间、年收入）+ 银行流水（最近6个月）或资产证明（退休金证明/房产证明/股票交割单等）"
+              ]
+            },
+            { "item": "户口本或亲属关系公证书", "required": false, "note": "有关家属申请时需提交" },
+            { "item": "其他相关资料", "required": false }
+          ]
+        },
+        {
+          "name": "特定大学生等",
+          "eligibility": "中国教育部公布名单中所列普通本科高校的在校本科生、研究生（博士/硕士在读）或毕业三年以内的毕业生",
+          "required_docs": [
+            { "item": "护照", "required": true },
+            { "item": "签证申请表（需粘贴本人照片）", "required": true },
+            { "item": "个人信息处理同意书", "required": true },
+            { "item": "能确认本人居住地的资料", "required": true },
+            { "item": "大学出具的在学证明书或毕业证书", "required": true },
+            { "item": "其他相关资料", "required": false }
+          ],
+          "notes": ["申请对象只限于学生本人，学生家属应申请常规单次签证"]
+        }
+      ]
+    },
+    {
+      "id": "multiple_3year",
+      "name": "个人三年多次旅游签证",
+      "validity": "3年",
+      "stay_limit": "每次30天",
+      "fee_rmb": 285,
+      "fee_note": "留宿冲绳县或访问东北三县（岩手、福岛、宫城）免签证费",
+      "subtypes": [
+        {
+          "name": "赴日东北六县多次旅游签证",
+          "condition": "第一次赴日行程中包含在东北六县（青森、岩手、宫城、秋田、山形、福岛）中任一县住宿",
+          "eligibility": "具有一定经济能力的人士及家属",
+          "required_docs": [
+            { "item": "护照", "required": true },
+            { "item": "签证申请表（需粘贴本人照片）", "required": true },
+            { "item": "个人信息处理同意书", "required": true },
+            { "item": "能确认本人居住地的资料", "required": true },
+            { "item": "能确认经济能力的资料（在职证明+银行流水6个月或资产证明）", "required": true },
+            { "item": "户口本复印件或亲属关系公证书", "required": false, "note": "家属申请时" },
+            { "item": "能确认有过访日经历的签证通知书（电子签需附）及使用中护照或旧护照", "required": false, "note": "过去3年内有2次以上持指定个人旅游签证赴日经历者，提供此项可免提交经济能力资料" },
+            { "item": "主申请人多次签证复印件", "required": false, "note": "家属申请时，主申请人已取得该类多次签证" },
+            { "item": "其他相关资料", "required": false }
+          ]
+        },
+        {
+          "name": "赴日冲绳多次旅游签证",
+          "condition": "第一次赴日行程中包含在冲绳县住宿",
+          "eligibility": "具有足够经济能力的人士及家属；或过去3年内曾以短期签证赴日且具有一定经济能力的人士及家属",
+          "required_docs": [
+            { "item": "护照", "required": true },
+            { "item": "签证申请表（需粘贴本人照片）", "required": true },
+            { "item": "个人信息处理同意书", "required": true },
+            { "item": "能确认本人居住地的资料", "required": true },
+            { "item": "能确认经济能力的资料（在职证明+银行流水6个月或资产证明）", "required": true },
+            { "item": "户口本复印件或亲属关系公证书", "required": false, "note": "家属申请时" },
+            { "item": "能确认有过访日经历的签证通知书及护照", "required": false, "note": "过去3年内有2次以上赴日经历者，提供此项可免提交经济能力资料" },
+            { "item": "主申请人多次签证复印件", "required": false, "note": "家属申请时" },
+            { "item": "其他相关资料", "required": false }
+          ]
+        },
+        {
+          "name": "具有足够经济能力人士的多次旅游签证",
+          "condition": "赴日目的地不受限制",
+          "eligibility": "具有足够经济能力的人士及家属",
+          "required_docs": [
+            { "item": "护照", "required": true },
+            { "item": "签证申请表（需粘贴本人照片）", "required": true },
+            { "item": "个人信息处理同意书", "required": true },
+            { "item": "能确认本人居住地的资料", "required": true },
+            { "item": "能确认经济能力的资料（在职证明+银行流水6个月或资产证明）", "required": true },
+            { "item": "户口本复印件或亲属关系公证书", "required": false, "note": "家属申请时" },
+            { "item": "能确认有过访日经历的签证通知书及护照", "required": false },
+            { "item": "主申请人多次签证复印件", "required": false, "note": "家属申请时" },
+            { "item": "其他相关资料", "required": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "multiple_5year",
+      "name": "相当高收入人士的五年多次签证",
+      "validity": "5年",
+      "stay_limit": "每次90天",
+      "fee_rmb": 285,
+      "eligibility": "具有相当高收入的人士及家属",
+      "special_note": "从初次赴日开始，观光旅游以外的短期访问也可以使用；赴日目的地不受限制；机票住宿可自行预订",
+      "required_docs": [
+        { "item": "护照", "required": true },
+        { "item": "签证申请表（需粘贴本人照片）", "required": true },
+        { "item": "个人信息处理同意书", "required": true },
+        { "item": "能确认本人居住地的资料", "required": true },
+        {
+          "item": "能确认经济能力的资料",
+          "required": true,
+          "note": "在职证明（含职位、在职期间、年收入）+ 个人所得税完税证明和银行流水（最近6个月）或资产证明（退休金证明/房产证明/股票交割单等）"
+        },
+        { "item": "户口本复印件或亲属关系公证书", "required": false, "note": "家属申请时" },
+        { "item": "主申请人多次签证复印件", "required": false, "note": "家属申请时" },
+        { "item": "其他相关资料", "required": false }
+      ]
+    }
+  ],
+
+  "important_notes": [
+    "旅游签证必须通过使馆指定旅行社申请，不允许非指定旅行社代理",
+    "旅游签证（不含五年多次）全程由指定旅行社管理，往返机票和住宿必须由指定旅行社预订",
+    "旅游单次签证须按申请时提交的日程表赴日，日程变更须提前通过指定旅行社提交变更报告书",
+    "旅游多次签证（不含五年多次）第一次赴日须按日程表，变更只能在签证发行日起3个月内",
+    "各项材料均应在发行后3个月内提交（材料上若标有有效期则以材料标注为准）",
+    "申请时提交的材料除护照、居住证等原件外一概不退还"
+  ],
+
+  "fee_summary": {
+    "single": { "amount": 145, "currency": "CNY" },
+    "multiple": { "amount": 285, "currency": "CNY" },
+    "free_conditions": [
+      "单次签证：访问冲绳县或东北三县（岩手、福岛、宫城）",
+      "多次签证：留宿冲绳县或访问东北三县（岩手、福岛、宫城）"
+    ]
+  },
+
+  "downloadable_forms": [
+    { "name": "签证申请书（简体字）", "format": "PDF" },
+    { "name": "签证申请书（英文）", "format": "PDF" },
+    { "name": "身元保证书", "format": "PDF" },
+    { "name": "邀请理由书（一次）", "format": "PDF" },
+    { "name": "邀请理由书（多次）", "format": "PDF" },
+    { "name": "申请人名单", "format": "PDF" },
+    { "name": "公司·团体的概要说明书", "format": "PDF" },
+    { "name": "停留日程表", "format": "PDF" }
+  ]
+}

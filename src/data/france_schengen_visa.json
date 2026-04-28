@@ -1,0 +1,206 @@
+{
+  "country": "法国",
+  "visa_type": "申根短期签证（旅游）",
+  "visa_code": "C类签证",
+  "schengen_zone": true,
+  "source_url": "https://france-visas.gouv.fr/",
+  "source_page_cn": "https://cn.ambafrance.org/",
+  "last_updated": "2025-01-01",
+  "data_fetched": "2026-04-27",
+  "applicant_region": "中国大陆",
+  "application_channel": "通过法国签证申请中心（TLScontact）预约递交材料，领事馆最终审核",
+  "processing_time": "通常15个自然日内，建议提前至少3周申请，旺季建议提前6-8周",
+
+  "visa_overview": {
+    "description": "申根C类短期签证，允许在申根区内停留最多90天（每180天内）。以法国为主要目的地或入境口岸时，须向法国领事馆申请。",
+    "schengen_area_note": "持法国申根签证可在26个申根成员国自由流动，无需额外签证",
+    "stay_limit": "每180天内最多90天",
+    "validity_options": ["单次", "双次", "多次（1年/2年/5年）"]
+  },
+
+  "required_docs": [
+    {
+      "item": "申根签证申请表",
+      "required": true,
+      "note": "在 france-visas.gouv.fr 在线填写并打印，申请人签字"
+    },
+    {
+      "item": "近期彩色照片",
+      "required": true,
+      "spec": "35mm×45mm，白色背景，近6个月内拍摄，符合申根签证照片标准"
+    },
+    {
+      "item": "有效护照",
+      "required": true,
+      "note": "护照有效期须超过预计离开申根区日期至少3个月；护照签发日期不超过10年；至少有2页空白页；如有旧护照请一并提交"
+    },
+    {
+      "item": "旧护照（如有）",
+      "required": false,
+      "note": "含有效申根签证或曾获申根签证的旧护照"
+    },
+    {
+      "item": "往返机票预订记录",
+      "required": true,
+      "note": "显示入境和出境日期的机票预订确认单（无需购票，预订记录即可）"
+    },
+    {
+      "item": "住宿证明",
+      "required": true,
+      "options": [
+        "酒店预订确认单（覆盖全程）",
+        "法国亲友出具的接待证明（Attestation d'accueil，须经市政厅盖章）",
+        "租房合同"
+      ]
+    },
+    {
+      "item": "旅行医疗保险",
+      "required": true,
+      "spec": "保额不低于3万欧元，覆盖整个申根区，覆盖全部旅行日期，包含紧急医疗救治和遣返费用"
+    },
+    {
+      "item": "经济能力证明",
+      "required": true,
+      "options": [
+        "近3个月银行流水（原件+复印件）",
+        "银行存款证明",
+        "信用卡账单"
+      ],
+      "note": "法国领事馆要求每日在法生活费不低于65欧元（有住宿证明）或120欧元（无住宿证明）"
+    },
+    {
+      "item": "在职证明 / 营业执照 / 退休证明",
+      "required": true,
+      "note": "证明申请人在本国有稳定工作或经济来源，增强回国意愿",
+      "options": [
+        "在职人员：单位出具的在职证明（含职位、薪资、批准假期日期）",
+        "自营业者：营业执照复印件",
+        "退休人员：退休证或退休金证明",
+        "学生：在读证明"
+      ]
+    },
+    {
+      "item": "户口本复印件",
+      "required": true,
+      "note": "户口本首页及本人页复印件"
+    },
+    {
+      "item": "身份证复印件（正反面）",
+      "required": true
+    },
+    {
+      "item": "行程单/旅游计划",
+      "required": true,
+      "note": "详细说明在法国及申根区的旅行计划，包括每日行程安排"
+    }
+  ],
+
+  "additional_docs_by_situation": [
+    {
+      "situation": "未成年人单独或随一方父母出行",
+      "docs": [
+        "出生证明",
+        "父母双方签字的授权书（公证）",
+        "未同行父母的护照复印件"
+      ]
+    },
+    {
+      "situation": "探亲访友",
+      "docs": [
+        "法国亲友的邀请信",
+        "亲友的居留证明（居留证/法国国籍证明）",
+        "亲属关系证明"
+      ]
+    },
+    {
+      "situation": "受邀参加商务活动",
+      "docs": [
+        "法国公司出具的邀请函",
+        "会议/展览邀请函"
+      ]
+    }
+  ],
+
+  "application_steps": [
+    {
+      "step": 1,
+      "title": "在线填写签证申请表",
+      "detail": "登录 france-visas.gouv.fr，选择签证类型，在线填写申请表并打印"
+    },
+    {
+      "step": 2,
+      "title": "预约TLScontact签证中心",
+      "detail": "登录 tlscontact.com 预约递交材料的时间，中国大陆有北京、上海、广州、成都、武汉、沈阳等多个中心"
+    },
+    {
+      "step": 3,
+      "title": "缴纳签证费",
+      "detail": "申请费80欧元（约合人民币620元），另需缴纳TLScontact服务费约200元人民币；12岁以下儿童免申请费"
+    },
+    {
+      "step": 4,
+      "title": "递交材料",
+      "detail": "携带所有原件及复印件前往TLScontact中心，采集生物特征信息（指纹+照片）"
+    },
+    {
+      "step": 5,
+      "title": "等待审核",
+      "detail": "材料转交法国领事馆审核，通常15个工作日内出结果；可通过TLScontact网站查询进度"
+    },
+    {
+      "step": 6,
+      "title": "领取护照",
+      "detail": "审核完成后前往TLScontact中心领取护照，或选择快递服务"
+    }
+  ],
+
+  "fee_summary": {
+    "visa_fee": {
+      "adult": { "amount": 80, "currency": "EUR", "note": "约合人民币620元，汇率浮动" },
+      "child_6_12": { "amount": 40, "currency": "EUR" },
+      "child_under_6": { "amount": 0, "currency": "EUR", "note": "免费" }
+    },
+    "service_fee": {
+      "tls_service": { "amount": 200, "currency": "CNY", "note": "TLScontact服务费，约200元人民币" }
+    },
+    "refundable": false
+  },
+
+  "biometrics": {
+    "required": true,
+    "note": "首次申请或上次采集超过59个月须重新采集；包括10指指纹和数字照片",
+    "exempt": ["12岁以下儿童", "指纹采集有困难者"]
+  },
+
+  "notes": [
+    "申根签证以主要目的地国或首个入境国为申请国，若在多国停留时间相同，则向首个入境国申请",
+    "中国公民通常获批单次或双次签证，多次签证需有良好的申根签证记录",
+    "签证有效期通常与行程日期匹配，不会无故延长",
+    "拒签后可在新情况下重新申请，或向法国领事馆提出复议",
+    "2025年10月12日起，申根区启用入境/出境系统（EES），将自动记录第三国公民的入境和出境信息"
+  ],
+
+  "application_centers_china": [
+    { "city": "北京", "operator": "TLScontact" },
+    { "city": "上海", "operator": "TLScontact" },
+    { "city": "广州", "operator": "TLScontact" },
+    { "city": "成都", "operator": "TLScontact" },
+    { "city": "武汉", "operator": "TLScontact" },
+    { "city": "沈阳", "operator": "TLScontact" }
+  ],
+
+  "official_links": [
+    {
+      "name": "法国签证官方申请平台",
+      "url": "https://france-visas.gouv.fr/"
+    },
+    {
+      "name": "TLScontact中国预约中心",
+      "url": "https://www.tlscontact.com/cn2fr/"
+    },
+    {
+      "name": "法国驻华大使馆签证信息",
+      "url": "https://cn.ambafrance.org/"
+    }
+  ]
+}
