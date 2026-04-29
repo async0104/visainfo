@@ -1,0 +1,65 @@
+{
+  "country": "阿联酋（迪拜）",
+  "visa_type": "免签入境",
+  "source_url": "https://ae.china-embassy.gov.cn/lsyw/zytz/202504/t20250414_11594207.htm",
+  "source_page": "https://ae.china-embassy.gov.cn/lsyw/zytz/202504/t20250414_11594207.htm",
+  "last_updated": "2025-04-11",
+  "data_fetched": "2026-04-29",
+  "applicant_region": "中国大陆",
+  "application_channel": "无需申请，持护照直接入境",
+  "processing_time": "落地即入境，无需提前办理",
+
+  "visa_free_policy": {
+    "name": "阿联酋对华免签政策（2025年4月调整版）",
+    "effective_date": "2025年4月（最新调整）",
+    "stay_limit": "每180天内累计不超过90天",
+    "applicable": "持中国普通护照的中国大陆公民",
+    "purpose": "旅游、探亲、短期商务",
+    "conditions": [
+      "护照有效期须在6个月以上",
+      "每180天内（自首次入境之日起计算）累计停留不超过90天",
+      "连续或间断停留满90天后须离境，首次入境之日180天后方可返回",
+      "超出90天每天罚款50迪拉姆（约100元人民币）"
+    ],
+    "important_note": "2025年4月政策调整：由原来的每次30天改为180天内累计90天，更灵活但需注意累计天数"
+  },
+
+  "required_docs": [
+    { "item": "有效普通护照（有效期6个月以上）", "required": true },
+    { "item": "返程机票或离境证明", "required": true },
+    { "item": "在阿联酋期间的住宿证明（酒店预订单等）", "required": false, "note": "建议准备，入境时可能被问及" },
+    { "item": "足够的在阿联酋期间的生活费用", "required": false, "note": "建议准备现金或信用卡" }
+  ],
+
+  "application_steps": [
+    { "step": 1, "title": "确认护照有效期", "detail": "确保护照有效期在6个月以上，并留有足够的空白签证页" },
+    { "step": 2, "title": "准备入境材料", "detail": "准备好返程机票、住宿预订单，建议提前兑换少量迪拉姆现金" },
+    { "step": 3, "title": "抵达阿联酋入境", "detail": "在迪拜国际机场（DXB）或阿布扎比机场（AUH）等口岸直接通过入境通道，无需办理签证" },
+    { "step": 4, "title": "注意累计停留天数", "detail": "记录入境日期，确保180天内累计停留不超过90天，避免超期罚款" }
+  ],
+
+  "fee_summary": {
+    "签证费": { "amount": 0, "currency": "CNY", "note": "免签，无需缴纳任何费用" },
+    "超期罚款": { "amount": 50, "currency": "AED", "note": "超出90天每天罚款50迪拉姆（约100元人民币）" },
+    "refundable": false
+  },
+
+  "validity_typical": {
+    "duration": "免签，无需签证",
+    "stay_per_visit": "180天内累计最长90天"
+  },
+
+  "notes": [
+    "2025年4月最新调整：停留规则由每次30天改为180天内累计90天，更适合多次往返",
+    "迪拜（Dubai）属于阿联酋（UAE），同一政策适用于阿布扎比、沙迦等所有阿联酋城市",
+    "超期停留每天罚款50迪拉姆，离境时在机场缴纳，建议严格控制累计天数",
+    "阿联酋为伊斯兰国家，请尊重当地宗教习俗，斋月期间公共场所不得饮食",
+    "迪拜机场是全球最繁忙机场之一，建议提前3小时到达"
+  ],
+
+  "official_links": [
+    { "name": "中国驻阿联酋使馆·免签政策通知", "url": "https://ae.china-embassy.gov.cn/lsyw/zytz/202504/t20250414_11594207.htm" },
+    { "name": "中国驻迪拜总领馆", "url": "https://dubai.china-consulate.gov.cn" },
+    { "name": "迪拜旅游官网（中文）", "url": "https://www.visitdubai.com/zh-cn" }
+  ]
+}

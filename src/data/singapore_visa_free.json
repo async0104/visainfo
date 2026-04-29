@@ -1,0 +1,67 @@
+{
+  "country": "新加坡",
+  "visa_type": "免签入境",
+  "source_url": "https://beijing.mfa.gov.sg/cn/consular-services/visa-information/",
+  "source_page": "https://beijing.mfa.gov.sg/cn/consular-services/visa-information/",
+  "last_updated": "2024-02-09",
+  "data_fetched": "2026-04-29",
+  "applicant_region": "中国大陆",
+  "application_channel": "无需申请，持护照直接入境",
+  "processing_time": "落地即入境，无需提前办理",
+
+  "visa_free_policy": {
+    "name": "中新互免签证",
+    "effective_date": "2024年2月9日",
+    "stay_limit": "每次不超过30天",
+    "applicable": "持中国普通护照的中国大陆公民",
+    "purpose": "旅游、探亲、短期商务",
+    "conditions": [
+      "护照有效期须在6个月以上",
+      "需持有返程机票或离境证明",
+      "需有足够的在新加坡期间的生活费用",
+      "入境前3天内须在线填写电子入境卡（SG Arrival Card），免费",
+      "从事工作、新闻报道等须事先批准的活动仍需申请签证",
+      "拟停留超过30天须提前申请签证"
+    ],
+    "important_note": "免签不等于保证入境，新加坡移民与关卡局（ICA）保留最终入境批准权"
+  },
+
+  "required_docs": [
+    { "item": "有效普通护照（有效期6个月以上）", "required": true },
+    { "item": "返程机票或离境证明", "required": true },
+    { "item": "SG Arrival Card（电子入境卡，入境前3天内在线填写）", "required": true, "note": "免费，网址：eservices.ica.gov.sg/sgarrivalcard" },
+    { "item": "在新加坡期间的住宿证明（酒店预订单等）", "required": false, "note": "建议准备，入境时可能被问及" },
+    { "item": "足够的在新加坡期间的生活费用证明", "required": false, "note": "建议准备，入境时可能被问及" }
+  ],
+
+  "application_steps": [
+    { "step": 1, "title": "入境前3天内填写电子入境卡", "detail": "登录 eservices.ica.gov.sg/sgarrivalcard 填写 SG Arrival Card，填写完成后保存确认函，建议截图备用" },
+    { "step": 2, "title": "准备入境材料", "detail": "确保护照有效期6个月以上，准备好返程机票和住宿预订单" },
+    { "step": 3, "title": "抵达新加坡入境", "detail": "在樟宜机场或其他口岸通过自动通关或人工通道入境，无需排队办理签证" }
+  ],
+
+  "fee_summary": {
+    "签证费": { "amount": 0, "currency": "CNY", "note": "免签，无需缴纳任何费用" },
+    "SG Arrival Card": { "amount": 0, "currency": "CNY", "note": "免费在线填写" },
+    "refundable": false
+  },
+
+  "validity_typical": {
+    "duration": "免签，无需签证",
+    "stay_per_visit": "每次最长30天"
+  },
+
+  "notes": [
+    "2024年2月9日起正式实施中新互免签证，中国普通护照持有人无需提前申请签证",
+    "SG Arrival Card（电子入境卡）必须在入境前3天内填写，这是入境的必要条件",
+    "免签仅适用于旅游、探亲、短期商务目的，工作、学习等仍需申请相应签证",
+    "新加坡移民局保留拒绝入境的权利，建议准备好住宿和返程证明",
+    "公务护照持有人同样免签，但规定略有不同"
+  ],
+
+  "official_links": [
+    { "name": "新加坡驻华大使馆签证信息", "url": "https://beijing.mfa.gov.sg/cn/consular-services/visa-information/" },
+    { "name": "SG Arrival Card 填写入口", "url": "https://eservices.ica.gov.sg/sgarrivalcard" },
+    { "name": "中国领事服务网·新加坡入境须知", "url": "https://cs.mfa.gov.cn/zggmcg/ljmdd/yz_645708/xjp_647942/rjjl_647952/" }
+  ]
+}

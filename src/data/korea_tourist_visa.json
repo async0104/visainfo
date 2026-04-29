@@ -1,0 +1,129 @@
+{
+  "country": "韩国",
+  "visa_type": "旅游签证 / 免签入境",
+  "source_url": "https://overseas.mofa.go.kr/cn-zh/brd/m_1201/list.do",
+  "source_page": "https://overseas.mofa.go.kr/cn-zh/brd/m_1201/list.do",
+  "last_updated": "2026-03-30",
+  "data_fetched": "2026-04-29",
+  "applicant_region": "中国大陆",
+  "application_channel": "韩国签证申请中心（KVAC）或驻华使领馆，支持线上电子签证",
+  "processing_time": "约5个工作日（电子签证）；贴纸签证约3-5个工作日",
+
+  "visa_free_policy": {
+    "jeju_island": {
+      "name": "济州岛免签",
+      "applicable": "所有中国大陆公民（个人/团体均可）",
+      "stay_limit": "30天",
+      "conditions": [
+        "必须乘坐直飞济州岛的航班或船舶入境",
+        "活动范围仅限济州岛，不得前往韩国本土",
+        "需持有效护照（有效期6个月以上）",
+        "需提供返程机票及住宿证明"
+      ]
+    },
+    "group_tour": {
+      "name": "韩国本土团体免签（试行）",
+      "applicable": "3人及以上中国团体游客",
+      "stay_limit": "15天",
+      "valid_until": "2026年6月30日",
+      "conditions": [
+        "须通过韩国政府指定旅行社组团",
+        "3人或以上同行",
+        "需统一行动，提前报备行程",
+        "试行期至2026年6月30日，届时政策可能调整"
+      ]
+    }
+  },
+
+  "visa_subtypes": [
+    {
+      "id": "c3_9_single",
+      "name": "C-3-9 个人旅游签证（单次）",
+      "validity": "3个月",
+      "stay_limit": "每次最长90天",
+      "entry": "单次",
+      "fee_cny": 220,
+      "required_docs": [
+        { "item": "签证申请表（含2寸白底彩色照片，近6个月内拍摄）", "required": true },
+        { "item": "护照原件（有效期6个月以上，留有空白页）", "required": true },
+        { "item": "护照复印件（个人信息页）", "required": true },
+        { "item": "身份证原件及复印件", "required": true },
+        { "item": "在职证明（含职位、入职时间、月薪、公司地址及公章）", "required": true, "note": "在职人员提供；退休人员提供退休证；学生提供在读证明" },
+        { "item": "近3个月银行流水或存款证明", "required": true, "note": "证明有足够经济能力" },
+        { "item": "居住证明", "required": false, "note": "户籍不在申请领区的人员需提供，如居住证、社保证明（近3个月）或纳税证明三选一" }
+      ]
+    },
+    {
+      "id": "c3_9_multiple_5year",
+      "name": "C-3-9 个人旅游签证（5年多次）",
+      "validity": "5年",
+      "stay_limit": "每次最长90天",
+      "entry": "多次",
+      "fee_cny": 440,
+      "eligibility": "户籍在北京、上海、广州等大城市，或有赴韩记录，或有发达国家签证记录",
+      "required_docs": [
+        { "item": "签证申请表（含2寸白底彩色照片）", "required": true },
+        { "item": "护照原件及复印件", "required": true },
+        { "item": "身份证原件及复印件", "required": true },
+        { "item": "户口本原件及复印件", "required": true, "note": "符合大城市条件的申请人需提供" },
+        { "item": "在职证明或收入证明", "required": true },
+        { "item": "近3个月银行流水或存款证明", "required": true },
+        { "item": "此前赴韩签证复印件", "required": false, "note": "有赴韩记录者提供，可提升通过率" }
+      ]
+    },
+    {
+      "id": "c3_9_multiple_10year",
+      "name": "C-3-9 个人旅游签证（10年多次）",
+      "validity": "10年",
+      "stay_limit": "每次最长90天",
+      "entry": "多次",
+      "fee_cny": 440,
+      "eligibility": "2026年3月30日起扩大范围：有赴韩记录、有发达国家签证、或符合特定条件的申请人",
+      "required_docs": [
+        { "item": "签证申请表（含2寸白底彩色照片）", "required": true },
+        { "item": "护照原件及复印件", "required": true },
+        { "item": "身份证原件及复印件", "required": true },
+        { "item": "在职证明及收入证明", "required": true },
+        { "item": "近6个月银行流水或存款证明", "required": true },
+        { "item": "此前赴韩签证或入境记录", "required": true, "note": "证明有赴韩经历" }
+      ]
+    }
+  ],
+
+  "application_steps": [
+    { "step": 1, "title": "确认申请领区", "detail": "根据户籍所在地确认管辖领事馆：北京（北京/天津/河北等）、上海（上海/江苏/浙江等）、广州（广东/广西/海南等），其他城市对应成都、沈阳、武汉、西安领馆" },
+    { "step": 2, "title": "准备材料", "detail": "按清单准备材料，在职证明需加盖公司公章，银行流水需银行盖章" },
+    { "step": 3, "title": "前往签证申请中心（KVAC）", "detail": "无需预约，先到先得。工作人员会在门口审核材料，材料齐全后取号等待叫号" },
+    { "step": 4, "title": "提交材料并面签", "detail": "核对材料，工作人员询问签证类型（单次/多次）及行程，约5分钟，无需紧张" },
+    { "step": 5, "title": "等待出签", "detail": "约3-5个工作日，可选择现场取护照或快递邮寄" }
+  ],
+
+  "application_channel": "韩国签证申请中心（KVAC），北京地址：朝阳区东三环北路霞光里18号佳程广场1号楼A座5层B单元",
+
+  "fee_summary": {
+    "单次签证": { "amount": 220, "currency": "CNY" },
+    "多次签证（5年/10年）": { "amount": 440, "currency": "CNY" },
+    "refundable": false,
+    "note": "费用以签证申请中心公示为准，可能随汇率调整"
+  },
+
+  "validity_typical": {
+    "duration": "单次3个月 / 多次5年或10年",
+    "stay_per_visit": "每次最长90天"
+  },
+
+  "notes": [
+    "济州岛免签无需提前申请，入境时直接办理，但活动范围严格限于济州岛",
+    "团体免签试行政策截止2026年6月30日，届时是否延续尚未确定，建议关注最新公告",
+    "2026年3月30日起韩国放宽5年及10年多次签证申请条件，更多人群可申请",
+    "外领区户籍（户籍不在申请领馆管辖区）需额外提供居住证明",
+    "签证审查过程中可能电话核实，请保持电话畅通",
+    "持有效美国、加拿大、澳大利亚、新西兰签证的中国公民，可免签入境韩国停留30天"
+  ],
+
+  "official_links": [
+    { "name": "韩国驻华大使馆签证材料清单", "url": "https://overseas.mofa.go.kr/cn-zh/brd/m_1201/list.do" },
+    { "name": "韩国签证申请中心（北京）", "url": "https://visaforkorea-bj.com/" },
+    { "name": "韩国旅游官网（中文）", "url": "https://chinese.visitkorea.or.kr" }
+  ]
+}
