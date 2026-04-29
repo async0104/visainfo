@@ -1,0 +1,98 @@
+{
+  "country": "加拿大",
+  "visa_type": "临时居民访问签证（Visitor Visa / TRV）",
+  "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/apply-visitor-visa.html",
+  "source_page": "https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada.html",
+  "last_updated": "2025-12-01",
+  "data_fetched": "2026-04-29",
+  "applicant_region": "中国大陆",
+  "application_channel": "通过加拿大移民局官网（IRCC）在线申请，需注册 GCKey 账号",
+  "processing_time": "约2-4周（高峰期可能更长）",
+
+  "visa_subtypes": [
+    {
+      "id": "single_entry",
+      "name": "单次入境签证",
+      "fee_cad": 100,
+      "fee_cny_approx": 540,
+      "validity": "根据护照有效期决定",
+      "stay_limit": "每次最长6个月（入境时海关决定）",
+      "note": "仅允许入境一次"
+    },
+    {
+      "id": "multiple_entry",
+      "name": "多次入境签证",
+      "fee_cad": 100,
+      "fee_cny_approx": 540,
+      "validity": "最长10年（与护照有效期一致）",
+      "stay_limit": "每次最长6个月",
+      "note": "最常见的签发类型，大多数申请人会获得多次入境签证"
+    }
+  ],
+
+  "required_docs": [
+    { "item": "有效护照（有效期须覆盖整个计划停留期）", "required": true },
+    { "item": "IMM 5257 签证申请表", "required": true, "note": "在线填写或下载PDF填写" },
+    { "item": "IMM 5707 家庭信息表", "required": true },
+    { "item": "护照照片（35mm×45mm，白底，6个月内近照）", "required": true, "spec": "加拿大签证照片规格" },
+    { "item": "近6个月银行流水", "required": true, "note": "建议覆盖每日200加元以上的预算" },
+    { "item": "在职证明（含职位、薪资、准假信息，公司盖章）", "required": true },
+    { "item": "营业执照副本（加盖公章）", "required": true, "note": "在职人员需提供" },
+    { "item": "旅行目的说明", "required": true, "note": "详细的行程计划，说明赴加目的" },
+    { "item": "往返机票预订单", "required": false, "note": "建议提供，证明有明确的回国计划" },
+    { "item": "酒店预订单或邀请函", "required": false, "note": "探亲需提供加拿大亲友的邀请函及其身份证明" },
+    { "item": "房产证/车产证复印件", "required": false, "note": "辅助证明国内约束力" },
+    { "item": "结婚证/户口本", "required": false, "note": "证明家庭关系和国内约束力" },
+    { "item": "过往旅行记录（旧护照签证页）", "required": false, "note": "有发达国家旅行记录有助于申请" }
+  ],
+
+  "biometrics": {
+    "required": true,
+    "fee_cad": 85,
+    "fee_cny_approx": 460,
+    "validity": "10年有效",
+    "note": "首次申请需预约签证中心录指纹+拍照，10年内再次申请无需重复采集",
+    "centers": "北京、上海、广州、重庆、成都、昆明、济南、沈阳、武汉、杭州等城市设有签证申请中心（VFS Global）"
+  },
+
+  "application_steps": [
+    { "step": 1, "title": "注册 GCKey 账号", "detail": "登录加拿大移民局官网（IRCC），注册 GCKey 账号用于在线申请" },
+    { "step": 2, "title": "填写申请表", "detail": "在线填写 IMM 5257（签证申请表）和 IMM 5707（家庭信息表），如实填写所有信息" },
+    { "step": 3, "title": "上传材料", "detail": "按清单准备电子版文件（PDF/JPG），上传至系统" },
+    { "step": 4, "title": "缴纳签证费", "detail": "签证费 CAD 100 + 生物信息采集费 CAD 85 = 共 CAD 185（约人民币1,000元）" },
+    { "step": 5, "title": "预约生物信息采集", "detail": "缴费后会收到生物信息采集通知信（BIL），凭此信预约最近的签证中心录指纹和拍照" },
+    { "step": 6, "title": "等待审核", "detail": "通常2-4周，高峰期可能更长，可在线查看申请状态" },
+    { "step": 7, "title": "护照贴签", "detail": "审核通过后，按要求邮寄护照至签证中心贴签，或亲自前往" }
+  ],
+
+  "fee_summary": {
+    "visa_fee": { "amount": 100, "currency": "CAD", "cny_approx": 540 },
+    "biometrics_fee": { "amount": 85, "currency": "CAD", "cny_approx": 460 },
+    "total": { "amount": 185, "currency": "CAD", "cny_approx": 1000 },
+    "refundable": false,
+    "note": "签证费不可退，生物信息采集费10年有效期内不重复收取"
+  },
+
+  "validity_typical": {
+    "duration": "最长10年（与护照有效期一致）",
+    "stay_per_visit": "每次最长6个月"
+  },
+
+  "notes": [
+    "加拿大签证通常无需面试，但使馆可能进行电话调查",
+    "签证有效期一般给到护照有效期，最长10年多次入境",
+    "每次停留不超过6个月，超期滞留将影响未来签证申请",
+    "持旅游签不得在加拿大从事任何形式的工作或注册长期课程（6个月以上需学签）",
+    "2025年起加强了资金证明和旅行目的真实性审核，建议提供详细行程计划",
+    "有美国、欧洲、澳大利亚等发达国家旅行记录有助于提高通过率",
+    "生物信息采集（指纹+照片）10年有效，保存好确认信息，后续申请无需重复",
+    "加拿大签证中心由 VFS Global 运营，中国多个城市设有服务点"
+  ],
+
+  "official_links": [
+    { "name": "加拿大移民局·访客签证官方页面", "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/apply-visitor-visa.html" },
+    { "name": "GCKey 在线申请系统", "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/application/account.html" },
+    { "name": "签证审理时间查询", "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/application/check-processing-times.html" },
+    { "name": "VFS Global 签证中心（中国）", "url": "https://visa.vfsglobal.com/chn/zh/can/" }
+  ]
+}

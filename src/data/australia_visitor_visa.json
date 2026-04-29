@@ -1,0 +1,105 @@
+{
+  "country": "澳大利亚",
+  "visa_type": "600访客签证（旅游类别）",
+  "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/visitor-600",
+  "source_page": "https://china.embassy.gov.au/bjngchinese/Visas_and_Migration.html",
+  "last_updated": "2026-01-01",
+  "data_fetched": "2026-04-29",
+  "applicant_region": "中国大陆",
+  "application_channel": "通过 ImmiAccount 在线申请（immi.homeaffairs.gov.au），无需前往签证中心",
+  "processing_time": "5-20个工作日（材料完整情况下）",
+
+  "visa_subtypes": [
+    {
+      "id": "tourist_stream",
+      "name": "Tourist Stream（旅游类别）",
+      "fee_aud": 190,
+      "fee_cny_approx": 900,
+      "validity": "1-5年（移民局决定）",
+      "stay_limit": "每次最长3个月或12个月（签证官决定）",
+      "entry_type": "单次或多次入境",
+      "processing_time": "5-20个工作日",
+      "note": "最常见的旅游签证类别，适合旅游、探亲访友"
+    },
+    {
+      "id": "frequent_traveler",
+      "name": "Frequent Traveler Stream（频繁旅客类别）",
+      "fee_aud": 1015,
+      "fee_cny_approx": 4770,
+      "validity": "最长10年",
+      "stay_limit": "每次最长12个月",
+      "entry_type": "多次入境",
+      "processing_time": "10-20个工作日",
+      "eligibility": "过去5年内曾持有澳大利亚签证并遵守签证条款离境",
+      "note": "适合频繁往返澳大利亚的商务人士或探亲家长"
+    },
+    {
+      "id": "sponsored_family",
+      "name": "Sponsored Family Stream（担保家庭类别）",
+      "fee_aud": 190,
+      "fee_cny_approx": 900,
+      "validity": "最长12个月",
+      "stay_limit": "每次最长12个月",
+      "entry_type": "单次或多次入境",
+      "processing_time": "5-20个工作日",
+      "note": "须有澳大利亚公民或永久居民亲属担保"
+    }
+  ],
+
+  "required_docs": [
+    { "item": "护照个人信息页扫描件", "required": true, "note": "有效期须超过拟在澳停留期至少6个月" },
+    { "item": "护照照片（白底35mm×45mm，6个月内近照）", "required": true },
+    { "item": "身份证正反面复印件", "required": true },
+    { "item": "户口本整本复印件", "required": true, "note": "需含全部有信息页面" },
+    { "item": "近6个月银行流水", "required": true, "note": "余额建议≥人民币6万元，可多账户合并" },
+    { "item": "在职证明或退休证明（原件盖公章）", "required": true, "note": "需注明职位、薪资、准假信息" },
+    { "item": "营业执照副本（加盖公章）", "required": true, "note": "在职人员需提供，退休人员无需" },
+    { "item": "往返机票预订单", "required": false, "note": "不需要已付款，但行程须合理" },
+    { "item": "澳大利亚行程计划", "required": false, "note": "每日行程安排，含住宿和景点" },
+    { "item": "酒店预订单", "required": false, "note": "如在亲友处住宿提供邀请函" },
+    { "item": "澳大利亚担保人资料（探亲时）", "required": false, "note": "担保人身份证明、邀请函、关系证明" },
+    { "item": "房产证/车产证复印件", "required": false, "note": "辅助财务证明，提升通过率" },
+    { "item": "结婚证/离婚证", "required": false, "note": "证明家庭关系稳定性" }
+  ],
+
+  "application_steps": [
+    { "step": 1, "title": "注册 ImmiAccount 账户", "detail": "登录 immi.homeaffairs.gov.au，创建个人账户（Individual），需有效邮箱，24小时内激活" },
+    { "step": 2, "title": "选择签证类别并填写申请表", "detail": "选择 Visitor → Tourist Visa (600)，填写个人信息、护照信息、旅行历史、工作教育背景、财务能力等" },
+    { "step": 3, "title": "上传申请材料", "detail": "支持 PDF/JPG/PNG 格式，单个文件不超过 60MB，将文件与对应材料类别一一对应" },
+    { "step": 4, "title": "支付签证费用", "detail": "支持 Visa/MasterCard 信用卡、PayPal，不支持银联借记卡直接支付，双币卡可用" },
+    { "step": 5, "title": "等待审理", "detail": "可登录 ImmiAccount 查看状态，约15-20%的申请会被要求体检（北京、上海、广州等城市有合作医院）" },
+    { "step": 6, "title": "获签", "detail": "电子签证（e-Visa），无需贴签，下载签证批签信，入境时出示护照即可" }
+  ],
+
+  "fee_summary": {
+    "tourist_stream": { "amount": 190, "currency": "AUD", "cny_approx": 900 },
+    "frequent_traveler": { "amount": 1015, "currency": "AUD", "cny_approx": 4770 },
+    "sponsored_family": { "amount": 190, "currency": "AUD", "cny_approx": 900 },
+    "priority_processing": { "amount": 1000, "currency": "AUD", "cny_approx": 4700, "note": "快捷审理通道，72小时内出结果（不保证）" },
+    "体检费": { "amount_range": "1500-2500", "currency": "CNY", "note": "约15-20%申请会被要求体检，费用自付" },
+    "refundable": false
+  },
+
+  "validity_typical": {
+    "tourist_stream": "1-5年多次入境",
+    "frequent_traveler": "最长10年多次入境",
+    "stay_per_visit": "通常3个月，部分可获6-12个月"
+  },
+
+  "notes": [
+    "澳大利亚自2016年起全面实行电子签证（e-Visa），护照上不贴签",
+    "签证有效期≠停留期限，入境时海关官员决定实际允许停留天数",
+    "超期滞留后果严重：3年禁止入境澳大利亚，影响其他国家签证",
+    "2026年起移民局加强银行流水审查，避免临时大额存款（'快进快出'），建议提前3个月保持流水稳定",
+    "建议提前60-90天开始准备签证申请，旺季（国庆、春节）审理周期可能延长5-10个工作日",
+    "澳大利亚医疗费用极高（急救车约AUD 1,000/次，住院约AUD 2,000-4,000/天），强烈建议购买旅游保险",
+    "无需采集指纹（生物识别信息），仅在被要求时前往签证中心"
+  ],
+
+  "official_links": [
+    { "name": "澳大利亚内政事务部·600签证官方页面", "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/visitor-600" },
+    { "name": "ImmiAccount 在线申请系统", "url": "https://online.immi.gov.au/lusc/login" },
+    { "name": "澳大利亚驻华使馆·签证信息", "url": "https://china.embassy.gov.au/bjngchinese/Visas_and_Migration.html" },
+    { "name": "签证审理时间查询", "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-processing-times" }
+  ]
+}

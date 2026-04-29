@@ -20,6 +20,12 @@ const COUNTRY_KEYWORDS: Record<string, string[]> = {
   france: ["法国", "france", "fr", "巴黎", "申根", "schengen", "欧洲", "法签"],
   usa: ["美国", "usa", "us", "america", "b1", "b2", "b签", "美签", "纽约", "洛杉矶"],
   uk: ["英国", "uk", "britain", "england", "london", "伦敦", "英签", "标准访客"],
+  korea: ["韩国", "korea", "kr", "首尔", "釜山", "济州", "济州岛", "韩签", "团体免签"],
+  singapore: ["新加坡", "singapore", "sg", "狮城", "新加坡免签", "圣淘沙"],
+  uae: ["阿联酋", "迪拜", "uae", "dubai", "阿布扎比", "abu dhabi", "中东"],
+  australia: ["澳大利亚", "澳洲", "australia", "au", "悉尼", "墨尔本", "堪培拉", "大堡礁", "澳签", "600签证"],
+  canada: ["加拿大", "canada", "ca", "多伦多", "温哥华", "渥太华", "加签", "枫叶国"],
+  malaysia: ["马来西亚", "malaysia", "my", "吉隆坡", "槟城", "兰卡威", "沙巴", "仙本那", "马签", "大马"],
 };
 
 const DATA_DIR = path.join(process.cwd(), "src", "data");
@@ -30,6 +36,12 @@ const DATA_FILES: Record<string, string> = {
   france: "france_schengen_visa.json",
   usa: "usa_b1b2_visa.json",
   uk: "uk_standard_visitor_visa.json",
+  korea: "korea_tourist_visa.json",
+  singapore: "singapore_visa_free.json",
+  uae: "uae_visa_free.json",
+  australia: "australia_visitor_visa.json",
+  canada: "canada_visitor_visa.json",
+  malaysia: "malaysia_visa_free.json",
 };
 
 // 国家中文名
@@ -39,6 +51,12 @@ const COUNTRY_NAMES: Record<string, string> = {
   france: "法国",
   usa: "美国",
   uk: "英国",
+  korea: "韩国",
+  singapore: "新加坡",
+  uae: "阿联酋（迪拜）",
+  australia: "澳大利亚",
+  canada: "加拿大",
+  malaysia: "马来西亚",
 };
 
 /**
@@ -187,7 +205,7 @@ export function buildSystemPrompt(countryIds: string[]): string {
   if (countryIds.length === 0) {
     return (
       basePrompt +
-      `\n\n目前支持查询的国家：日本、泰国、法国、美国、英国。请告诉我你想去哪个国家，我来帮你查签证材料。`
+      `\n\n目前支持查询的国家：日本、泰国、法国、美国、英国、韩国、新加坡、阿联酋（迪拜）、澳大利亚、加拿大、马来西亚。请告诉我你想去哪个国家，我来帮你查签证材料。`
     );
   }
 

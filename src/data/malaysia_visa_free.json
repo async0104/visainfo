@@ -1,0 +1,79 @@
+{
+  "country": "马来西亚",
+  "visa_type": "免签入境（中马互免签证协定）",
+  "source_url": "https://my.china-embassy.gov.cn/fwzc/lsyw/lszj/fhqz2024/cjwdvisa/202508/t20250801_11681383.htm",
+  "source_page": "https://cs.mfa.gov.cn/zggmcg/ljmdd/yz_645708/mlxy_647012/rjjl_647022/",
+  "last_updated": "2025-07-17",
+  "data_fetched": "2026-04-29",
+  "applicant_region": "中国大陆",
+  "application_channel": "无需申请签证，持护照直接入境。但须提前在线填写 MDAC（马来西亚电子入境卡）",
+  "processing_time": "落地即入境，无需提前办理签证",
+
+  "visa_free_policy": {
+    "name": "中马互免签证协定（永久互免）",
+    "effective_date": "2025年7月17日正式生效",
+    "type": "永久互免（非临时措施）",
+    "stay_limit": "单次停留不超过30天",
+    "cumulative_limit": "每180天累计停留不超过90天",
+    "applicable": "持有效中国公务普通护照、普通护照的中国公民",
+    "purpose": "旅游/度假、探亲访友、商务活动、文化交流、私人事务、医疗、国际中转",
+    "conditions": [
+      "护照有效期须在6个月以上",
+      "单次停留不超过30天（从入境次日0时起算，至第30日24时为止）",
+      "每180天累计停留不超过90天",
+      "须提前在线填写 MDAC（马来西亚电子入境卡）"
+    ],
+    "not_covered": "如需单次停留超过30天，或从事工作、学习、新闻报道等需事先批准的活动，仍需提前申请相应签证"
+  },
+
+  "mdac": {
+    "name": "MDAC（Malaysia Digital Arrival Card / 马来西亚电子入境卡）",
+    "url": "https://imigresen-online.imi.gov.my/mdac/main",
+    "required": true,
+    "when_to_fill": "抵达马来西亚前3天内在线填写",
+    "note": "所有旅客（含免签）必须提前在线填写，提交后在邮箱查看确认信，打印纸质版或拍照随身携带",
+    "free": true
+  },
+
+  "required_docs": [
+    { "item": "有效护照（有效期6个月以上，有足够空白页）", "required": true },
+    { "item": "MDAC 确认信（打印纸质版或手机截图）", "required": true, "note": "抵达前3天内在线填写" },
+    { "item": "已付款的与停留天数相符的酒店订单", "required": true },
+    { "item": "已付款的离马返程机票", "required": true },
+    { "item": "资金证明（1000美元以上或等价其他货币）", "required": true, "note": "含现金、支票、银行卡、电子钱包等" }
+  ],
+
+  "application_steps": [
+    { "step": 1, "title": "确认护照有效期", "detail": "确保护照有效期在6个月以上，并留有足够的空白签证页" },
+    { "step": 2, "title": "填写 MDAC 电子入境卡", "detail": "抵达前3天内登录 imigresen-online.imi.gov.my/mdac/main 在线填写，提交后打印确认信" },
+    { "step": 3, "title": "准备入境材料", "detail": "准备好返程机票、酒店预订单、资金证明（1000美元以上）" },
+    { "step": 4, "title": "抵达马来西亚入境", "detail": "吉隆坡国际机场（KLIA）等口岸可通过自助通关闸门（AUTOGATE）入境，出示护照和 MDAC 确认信" }
+  ],
+
+  "fee_summary": {
+    "签证费": { "amount": 0, "currency": "CNY", "note": "免签，无需缴纳任何签证费用" },
+    "MDAC": { "amount": 0, "currency": "CNY", "note": "电子入境卡免费填写" }
+  },
+
+  "validity_typical": {
+    "duration": "免签，无需签证",
+    "stay_per_visit": "单次最长30天，每180天累计不超过90天"
+  },
+
+  "notes": [
+    "2025年7月17日起中马互免签证协定正式生效，这是永久性互免，非临时措施",
+    "此前的临时免签措施（截至2026年12月31日）已被永久互免协定取代",
+    "MDAC 电子入境卡是强制性的，即使免签也必须提前在线填写",
+    "2024年6月1日起，中国公民可通过吉隆坡国际机场等口岸的自助通关闸门（AUTOGATE）入出境",
+    "入境时需用英文或马来文回答移民官关于行程的问询（可请同行人员协助）",
+    "马来西亚是多元文化国家，请尊重当地宗教习俗",
+    "吉隆坡、槟城、兰卡威、沙巴、仙本那等均为热门旅游目的地"
+  ],
+
+  "official_links": [
+    { "name": "中国驻马来西亚使馆·免签政策说明", "url": "https://my.china-embassy.gov.cn/fwzc/lsyw/lszj/fhqz2024/cjwdvisa/202508/t20250801_11681383.htm" },
+    { "name": "中国领事服务网·马来西亚入境须知", "url": "https://cs.mfa.gov.cn/zggmcg/ljmdd/yz_645708/mlxy_647012/rjjl_647022/" },
+    { "name": "MDAC 电子入境卡填写入口", "url": "https://imigresen-online.imi.gov.my/mdac/main" },
+    { "name": "马来西亚旅游局官网（中文）", "url": "https://www.malaysia.travel/zh-cn" }
+  ]
+}
