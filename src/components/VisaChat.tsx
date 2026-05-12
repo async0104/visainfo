@@ -28,6 +28,7 @@ export default function VisaChat({ countryId, countryName, flag }: VisaChatProps
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const abortRef = useRef<AbortController | null>(null);
   const bottomRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLTextAreaElement>(null);
 
@@ -60,11 +61,16 @@ export default function VisaChat({ countryId, countryName, flag }: VisaChatProps
       // 先占位 assistant 消息
       setMessages((prev) => [...prev, { role: "assistant", content: "" }]);
 
+      // 创建 AbortController 用于中断
+      const controller = new AbortController();
+      abortRef.current = controller;
+
       try {
         const res = await fetch("/api/chat", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ messages: newMessages, countryId }),
+          signal: controller.signal,
         });
 
         if (!res.ok) {
@@ -111,18 +117,33 @@ export default function VisaChat({ countryId, countryName, flag }: VisaChatProps
           }
         }
       } catch (e) {
-        const msg = e instanceof Error ? e.message : "请求失败，请稍后重试";
-        setError(msg);
-        // 移除空的 assistant 占位
-        setMessages((prev) =>
-          prev[prev.length - 1]?.content === "" ? prev.slice(0, -1) : prev
-        );
+        // 用户主动中断不算错误
+        if (e instanceof DOMException && e.name === "AbortError") {
+          // 如果已有部分内容，保留；如果是空的，移除占位
+          setMessages((prev) =>
+            prev[prev.length - 1]?.content === "" ? prev.slice(0, -1) : prev
+          );
+        } else {
+          const msg = e instanceof Error ? e.message : "请求失败，请稍后重试";
+          setError(msg);
+          // 移除空的 assistant 占位
+          setMessages((prev) =>
+            prev[prev.length - 1]?.content === "" ? prev.slice(0, -1) : prev
+          );
+        }
       } finally {
+        abortRef.current = null;
         setLoading(false);
       }
     },
     [messages, loading, countryId]
   );
+
+  const stopGeneration = useCallback(() => {
+    if (abortRef.current) {
+      abortRef.current.abort();
+    }
+  }, []);
 
   const handleKeyDown = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
     if (e.key === "Enter" && !e.shiftKey) {
@@ -255,19 +276,27 @@ export default function VisaChat({ countryId, countryName, flag }: VisaChatProps
                 className="flex-1 resize-none rounded-xl border border-gray-200 px-3 py-2 text-sm focus:outline-none focus:border-blue-400 disabled:opacity-50 bg-gray-50 max-h-24 overflow-y-auto"
                 style={{ lineHeight: "1.5" }}
               />
-              <button
-                onClick={() => sendMessage(input)}
-                disabled={loading || !input.trim()}
-                className="flex-shrink-0 w-9 h-9 rounded-xl bg-blue-600 text-white flex items-center justify-center hover:bg-blue-700 disabled:opacity-40 disabled:cursor-not-allowed transition-all active:scale-95"
-              >
-                {loading ? (
-                  <span className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin" />
-                ) : (
+              {loading ? (
+                <button
+                  onClick={stopGeneration}
+                  className="flex-shrink-0 w-9 h-9 rounded-xl bg-red-500 text-white flex items-center justify-center hover:bg-red-600 transition-all active:scale-95"
+                  title="停止生成"
+                >
+                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                    <rect x="6" y="6" width="12" height="12" rx="2" />
+                  </svg>
+                </button>
+              ) : (
+                <button
+                  onClick={() => sendMessage(input)}
+                  disabled={!input.trim()}
+                  className="flex-shrink-0 w-9 h-9 rounded-xl bg-blue-600 text-white flex items-center justify-center hover:bg-blue-700 disabled:opacity-40 disabled:cursor-not-allowed transition-all active:scale-95"
+                >
                   <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" />
                   </svg>
-                )}
-              </button>
+                </button>
+              )}
             </div>
             <p className="text-xs text-gray-400 mt-1.5 text-center">
               Enter 发送 · Shift+Enter 换行 · 仅供参考，以官方为准
