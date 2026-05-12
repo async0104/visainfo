@@ -117,7 +117,7 @@ export async function POST(req: NextRequest) {
     // Agent Loop（非流式阶段）
     while (toolRounds < MAX_TOOL_ROUNDS) {
       const response = await client.chat.completions.create({
-        model: "deepseek-chat",
+        model: "deepseek-v4-pro",
         messages: fullMessages,
         tools: TOOL_DEFINITIONS,
         tool_choice: "auto",
@@ -134,7 +134,7 @@ export async function POST(req: NextRequest) {
         // 模型已经给出了最终回复，流式返回
         // 为了流式体验，再做一次流式调用
         const stream = await client.chat.completions.create({
-          model: "deepseek-chat",
+          model: "deepseek-v4-pro",
           messages: fullMessages,
           tools: TOOL_DEFINITIONS,
           tool_choice: "none", // 强制不调工具，直接回复
@@ -168,7 +168,7 @@ export async function POST(req: NextRequest) {
 
     // 如果循环结束还没出来，做最终流式回复
     const finalStream = await client.chat.completions.create({
-      model: "deepseek-chat",
+      model: "deepseek-v4-pro",
       messages: fullMessages,
       tools: TOOL_DEFINITIONS,
       tool_choice: "none",
