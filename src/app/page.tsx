@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { COUNTRIES } from "@/lib/visaData";
+import VisaChat from "@/components/VisaChat";
 
 const difficultyLabel = {
   easy: { text: "简单", color: "bg-green-100 text-green-700" },
@@ -72,6 +73,9 @@ export default function HomePage() {
           我们会定期核查更新。签证政策可能随时变化，申请前请务必以官方最新公告为准。
         </p>
       </section>
+
+      {/* 全局 AI 签证助手 */}
+      <VisaChat />
     </div>
   );
 }

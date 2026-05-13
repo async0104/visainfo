@@ -9,17 +9,25 @@ interface Message {
 }
 
 interface VisaChatProps {
-  countryId: string;
-  countryName: string;
-  flag: string;
+  countryId?: string;
+  countryName?: string;
+  flag?: string;
 }
 
-// 快捷问题
-const QUICK_QUESTIONS = [
+// 快捷问题 — 国家详情页
+const COUNTRY_QUICK_QUESTIONS = [
   "需要准备哪些材料？",
   "签证费是多少？",
   "大概要多久能拿到签证？",
   "有哪些注意事项？",
+];
+
+// 快捷问题 — 首页通用
+const GLOBAL_QUICK_QUESTIONS = [
+  "哪些国家免签可以直接去？",
+  "第一次出国需要准备什么？",
+  "预算3000以内去哪里比较好？",
+  "办签证一般需要多长时间？",
 ];
 
 export default function VisaChat({ countryId, countryName, flag }: VisaChatProps) {
@@ -170,10 +178,12 @@ export default function VisaChat({ countryId, countryName, flag }: VisaChatProps
         >
           {/* 头部 */}
           <div className="bg-blue-600 text-white px-4 py-3 flex items-center gap-2 flex-shrink-0">
-            <span className="text-xl">{flag}</span>
+            <span className="text-xl">{flag || "🌍"}</span>
             <div className="flex-1 min-w-0">
               <p className="font-semibold text-sm leading-tight">签证助手</p>
-              <p className="text-xs text-blue-200 truncate">{countryName}签证 · 基于官方数据</p>
+              <p className="text-xs text-blue-200 truncate">
+                {countryName ? `${countryName}签证 · 基于官方数据` : "出境签证一站式咨询 · 基于官方数据"}
+              </p>
             </div>
             <button
               onClick={() => setOpen(false)}
@@ -189,13 +199,23 @@ export default function VisaChat({ countryId, countryName, flag }: VisaChatProps
             {messages.length === 0 && (
               <div className="space-y-3">
                 <div className="bg-white rounded-xl rounded-tl-sm p-3 shadow-sm border border-gray-100 text-sm text-gray-700 leading-relaxed">
-                  你好！我是{countryName}签证助手 {flag}
-                  <br />
-                  可以问我材料清单、费用、流程等问题，数据来自官方使馆。
+                  {countryName ? (
+                    <>
+                      你好！我是{countryName}签证助手 {flag}
+                      <br />
+                      可以问我材料清单、费用、流程等问题，数据来自官方使馆。
+                    </>
+                  ) : (
+                    <>
+                      你好！我是签证通 AI 助手 🌍
+                      <br />
+                      可以帮你查各国签证信息、对比目的地、解答出境旅行疑问。
+                    </>
+                  )}
                 </div>
                 {/* 快捷问题 */}
                 <div className="space-y-1.5">
-                  {QUICK_QUESTIONS.map((q) => (
+                  {(countryId ? COUNTRY_QUICK_QUESTIONS : GLOBAL_QUICK_QUESTIONS).map((q) => (
                     <button
                       key={q}
                       onClick={() => sendMessage(q)}
